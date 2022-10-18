@@ -507,12 +507,17 @@ body {
   margin-top: 0;
   margin-bottom: 80px;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,340px);
+  gap:20px;
 }
 .result-search-item {
   width: 340px;
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
 }
 .result-search-title {
   font-weight: 700;
@@ -523,9 +528,13 @@ body {
 }
 .result-search-desc-box {
   margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 .result-search-btn-box {
   margin-bottom:16px;
+  display: flex;
+  justify-content: space-between;
 }
 .result-search-price {
   font-weight: 400;
@@ -538,6 +547,7 @@ body {
 }
 .result-search-rating-box {
   display: flex;
+  margin-top:auto;
 }
 .result-search-stars-list {
   margin: 0;
@@ -584,4 +594,9 @@ body {
 .pagination-link-current {
   color:#000000;
   background-color: #F2F2F2;
+}
+
+.pagination-link-dotted {
+  background-color: #ffffff;
+  color:#000000;
 }
