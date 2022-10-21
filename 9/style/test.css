@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 1200px;
+  margin:0 auto;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-brown {
+  background-color:#756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+.button-brown:focus {
+  background-color: #615048;
+  outline: none;
+}
+.button-brown:active {
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+.button-blue:focus{
+  background-color: #68A2CA;
+}
+.button-blue:active{
+  background-color: #82B3D3;
+  color:rgba(255, 255, 255, 0.3);
+}
+.button-blue:disabled{
+  background-color: #E5E5E5;
+}
+
+.button-green:hover{
+  background-color:#6C9E42;
+}
+.button-green:focus{
+  background-color:#6C9E42;
+}
+.button-green:active{
+  background-color:#7DB54F;
+  color:rgba(255, 255, 255, 0.3);
+}
+.button-green:disabled{
+  background-color: #E5E5E5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.catalog {
+  padding: 50px 70px 60px 70px;
+}
+
+.result-seach-list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,340px);
+  gap:20px;
+}
+
+.result-search-item {
+  width: 340px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-search-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 16px 0;
+}
+
+.result-search-list-description {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.result-search-item-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.result-search-item-description:last-child {
+  margin-bottom: 0;
+}
+
+.result-search-btn-box {
+  margin-bottom:16px;
+  display: flex;
+}
+.result-search-price {
+  font-weight: 400;
+}
+
+.result-search-link-details {
+  display: inline-block;
+  font-weight: 700;
+  max-width: 140px;
+  text-align: center;
+  padding: 8px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.result-search-link-favorites {
+  background-color: #82B3D3;
+  max-width: 140px;
+  font-weight: 700;
+  padding: 8px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.result-search-link-favorites-green {
+  background-color: #7DB54F;
+}
+
+.result-search-rating-box {
+  display: flex;
+  margin-top:auto;
+}
+
+.result-search-stars-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.result-search-stars-item {
+  min-width: 18px;
+  min-height: 17px;
+  margin-right: 8px;
+  background-image: url("../images/icon-start.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 17px;
+}
+
+.result-search-stars-item:last-child {
+  margin-right: 0;
+}
+
+.result-search-rating {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+  padding: 8px 22px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
