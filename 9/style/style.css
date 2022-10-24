@@ -105,7 +105,7 @@ body {
 
 .header-container {
   display: flex;
-  padding-left: 210px;
+  padding-left: 238px;
   padding-right: 70px;
   position: relative;
 }
@@ -200,7 +200,7 @@ body {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-position: center;
+  background-position: left 5px center;
 }
 
 .navigation-user .navigation-item:nth-child(2) {
@@ -212,7 +212,7 @@ body {
   background-image: url("../images/icons/heart.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-position: center;
+  background-position: left 5px center;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link::before {
@@ -228,7 +228,7 @@ body {
   color: #ffffff;
   position: absolute;
   top:11px;
-  right: 4px;
+  right: 10px;
 }
 
 .navigation-user .navigation-link:hover {
@@ -421,7 +421,7 @@ body {
 }
 
 .hotel-search-block-text {
-  width: 600px;
+  max-width: 592px;
   margin: 0 auto;
   margin-bottom:54px
 }
@@ -510,6 +510,8 @@ body {
   height: 52px;
   padding: 0;
   border:none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .subscribe-btn {
@@ -522,7 +524,7 @@ body {
   border:none;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 40px;
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -545,6 +547,7 @@ body {
 
 .footer-social {
   width: 160px;
+  margin-top: 5px;
 }
 
 .footer-social-list {
@@ -591,6 +594,7 @@ body {
   font-style: normal;
   width: 720px;
   text-align: center;
+  margin-top:7px;
 }
 
 .footer-contact-phone {
@@ -620,6 +624,7 @@ body {
   height: 34px;
   position: relative;
   outline: none;
+  margin-top: 8px;
 }
 
 .footer-developer-link:hover .developer-icon{
